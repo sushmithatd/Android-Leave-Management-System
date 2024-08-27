@@ -1,0 +1,15 @@
+<!-- activity_leave_requests.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaveRequestsActivity">
+
+    <ListView
+        android:id="@+id/leaveRequestsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</RelativeLayout>

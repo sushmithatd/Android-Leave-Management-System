@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="397dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="#59A7C1"
+        android:text="Leave Application"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/leaveTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioAnnual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annual Leave"
+            android:textColor="#0C0C0C" />
+
+        <RadioButton
+            android:id="@+id/radioSick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sick Leave" />
+
+        <RadioButton
+            android:id="@+id/radioOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/reasonEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reason"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date" />
+
+    <EditText
+        android:id="@+id/startDatePickerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Select Start Date"
+        android:inputType="none"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date" />
+
+    <EditText
+        android:id="@+id/endDatePickerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Select End Date"
+        android:inputType="none"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63" />
+
+    <Button
+        android:id="@+id/applyLeaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Apply Leave" />
+
+    <Button
+        android:id="@+id/viewLeaveHistoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="View Leave History" />
+
+</LinearLayout>
